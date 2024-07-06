@@ -1,0 +1,58 @@
+.reference-box {
+  box-shadow: 0 2px 15px rgb(0 0 0 /15%);
+  border-radius: 6px;
+  transition: 0.3s;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.reference-box h3 {
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 1px solid #e6e6e7;
+  padding: 10px 20px;
+  color: black;
+}
+.reference-box p {
+  padding: 10px 20px;
+  flex: 1;
+  color: #777;
+  line-height: 1.5;
+  border-bottom: 1px solid #e6e6e7;
+}
+.reference-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+.reference-box .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.reference-box .info a {
+  color: #35495e;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.reference-box .info a:hover {
+  color: black;
+}
+.reference-box .info svg {
+  color: #35495e;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.reference-box:hover .info svg {
+  animation: moving-arrow 0.6s linear infinite;
+}
+.reference-box .info svg:hover {
+  color: black;
+}
+@keyframes moving-arrow {
+  100% {
+    transform: translateX(10px);
+  }
+}

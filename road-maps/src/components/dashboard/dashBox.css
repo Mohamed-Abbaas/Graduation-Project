@@ -1,0 +1,16 @@
+.dash-box {
+  background-color: white;
+}
+.dash-box .post {
+  max-width: 100%;
+  width: 100%;
+}
+.dash-box .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 30px;
+  gap: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}

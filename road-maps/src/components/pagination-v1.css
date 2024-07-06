@@ -1,0 +1,28 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.pagination li {
+  background-color: #ececec;
+  border-radius: 6px;
+  width: 90px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 4px 4px 0 #cccccc;
+}
+.pagination li a {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+.pagination li:active {
+  transform: translateX(2px) translateY(2px);
+}
+.pagination li.active {
+  transform: translateX(2px) translateY(2px);
+  background-color: #cccccc;
+  box-shadow: none;
+}

@@ -1,0 +1,114 @@
+.register {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  display: flex !important;
+}
+.radio-container {
+  display: flex;
+  margin-left: 20px;
+  gap: 5px;
+}
+.radio-container label {
+  margin-right: 58px;
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.radio-container input {
+  --webkit-appearance: none;
+  appearance: none;
+}
+.radio-container label::before {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #888;
+  top: 6px;
+
+  left: -25px;
+}
+.radio-container label:hover::before {
+  border-color: #1787ec;
+}
+.radio-container label .icon {
+  transform: scale(0) rotate(360deg);
+  position: absolute;
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  font-size: 13px;
+  height: 19px;
+  width: 18px;
+  background-color: #1787ec;
+  color: white;
+  transition: 0.3s;
+}
+.radio-container input[type="radio"]:checked + label .icon {
+  transform: scale(1);
+}
+.register img {
+  margin-top: 35px !important;
+}
+@media (max-width: 991px) {
+  .register img {
+    margin-top: 170px !important;
+  }
+}
+@media (max-width: 1199px) {
+  .register img {
+    margin-top: 170px !important;
+  }
+}
+.register input[type="file"] {
+  display: none;
+}
+.register label[for="file"] {
+  background-color: #eee;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-top: -50px;
+  display: block;
+  transition: 0.3s;
+  opacity: 0;
+  pointer-events: none;
+}
+.register .visible {
+  opacity: 1 !important;
+  margin-top: 30px !important;
+  pointer-events: auto !important;
+}
+.register button {
+  transition: 0.3s;
+}
+.regular-input {
+  padding: 15px 10px !important;
+  background-color: #eee;
+  outline: none;
+  width: 450px;
+}
+@media (max-width: 767px) {
+  .regular-input {
+    width: 100% !important;
+  }
+}
+.regular-input:focus::placeholder {
+  opacity: 0;
+}
+.register .file-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.register .file-error {
+  color: red;
+}
+.register .error {
+  margin-bottom: 20px;
+}

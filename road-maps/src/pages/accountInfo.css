@@ -1,0 +1,92 @@
+.account-info input[type="file"] {
+  display: none;
+}
+.account-info label[for="image"] {
+  background-color: #eee;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 20px;
+  cursor: pointer;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .account-info label[for="image"] {
+    width: 150px;
+    height: 150px;
+  }
+}
+.account-info label[for="image"] svg {
+  font-size: 100px;
+  color: 2196f3;
+}
+.account-info {
+  display: flex;
+  background-color: #f1f5f9;
+  height: 100%;
+}
+.account-info .left-form {
+  width: 300px;
+  background-color: white;
+  padding-bottom: 350px;
+  box-shadow: 0 0 10px #ddd;
+  padding-top: 150px;
+}
+@media (max-width: 767px) {
+  .account-info .left-form {
+    width: 200px;
+  }
+}
+.account-info .settings-form {
+  margin-left: 20px;
+  flex: 1;
+}
+@media (max-width: 767px) {
+  .account-info .settings-form {
+    padding-right: 20px;
+  }
+}
+.account-info .left-form button {
+  display: block;
+  width: fit-content;
+  padding: 5px 16px;
+  background-color: #2196f3;
+  color: white;
+  border-radius: 6px;
+  margin-left: auto;
+  margin-top: 30px;
+  transition: 0.3s;
+  margin-right: auto;
+}
+.account-info .left-form button:hover {
+  background-color: #1787e0;
+}
+.account-info .forms-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media (max-width: 991px) {
+  .account-info .forms-container {
+    width: 100%;
+  }
+}
+.account-info .first-button {
+  margin-bottom: 30px;
+}
+.account-info .my-hr {
+  margin-bottom: 20px;
+}
+.forms-container .disabled {
+  pointer-events: none;
+}

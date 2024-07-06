@@ -1,0 +1,27 @@
+.right {
+  width: 700px;
+}
+.right .valid-image {
+  min-width: 700px;
+  margin-top: -50px;
+}
+@media (max-width: 1199px) {
+  .right {
+    width: 500px;
+  }
+  .right .valid-image {
+    min-width: 500px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .right .valid-image {
+    min-width: 400px;
+    margin-top: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .right {
+    display: none;
+  }
+}

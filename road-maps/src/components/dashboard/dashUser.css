@@ -1,0 +1,114 @@
+.user-container {
+}
+.user-container img {
+  display: inline;
+}
+.user-container p {
+  font-weight: bold;
+  margin-left: 10px;
+  display: inline;
+}
+.the-user .buttons {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-around; */
+}
+.the-user .buttons button {
+  transition: 0.3s;
+}
+
+.the-user .buttons .bg-red {
+  position: relative;
+  margin-left: 100px;
+  margin-right: 50px;
+}
+.the-user .buttons .bg-red:hover {
+  background-color: #cc0000;
+}
+.the-user .buttons .bg-blue:hover {
+  background-color: #1787e0;
+}
+.the-user .delete-popup {
+  position: absolute;
+  right: -40px;
+  top: 50px;
+  border: 1px solid black;
+  padding: 10px;
+  z-index: 10;
+  color: black;
+  background-color: #fffff0;
+}
+.the-user .delete-popup p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.the-user .yes-no {
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
+}
+.the-user .confirm-delete {
+  transition: 0.3s;
+  transition: 0.3s;
+  padding: 5px 30px;
+  border: 1px solid #7777;
+}
+.the-user .cancel-delete {
+  transition: 0.3s;
+  transition: 0.3s;
+  padding: 5px 30px;
+  border: 1px solid #7777;
+}
+.the-user .confirm-delete:hover {
+  background-color: green;
+  color: white;
+}
+.the-user .cancel-delete:hover {
+  background-color: red;
+  color: white;
+}
+.role-raw {
+  color: #2196f3;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.role-raw:hover {
+  color: #1787e0;
+}
+.toggle-switch {
+  background-color: #ccc;
+  width: 78px;
+  height: 32px;
+  position: relative;
+  border-radius: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.toggle-switch .icon {
+  font-weight: 900;
+  background-color: white;
+  top: 4px;
+  left: 4px;
+  position: absolute;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  transition: 0.3s;
+}
+.toggle-switch.clicked {
+  background-color: #ccc;
+}
+.toggle-switch.clicked .icon {
+  left: 50px;
+}
+.toggle-switch.success .icon {
+  color: green;
+}
+.toggle-switch.success {
+  pointer-events: none;
+  background-color: green;
+}

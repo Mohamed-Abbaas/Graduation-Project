@@ -1,0 +1,26 @@
+.settings-form button {
+  padding: 10px 15px;
+  color: white;
+  background-color: #2196f3;
+  display: inline-block;
+  width: fit-content;
+  border-radius: 6px;
+  margin-left: auto;
+  transition: 0.3s;
+  width: 170px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.settings-form button:hover {
+  background-color: #1787e0;
+}
+.settings-form input {
+  width: 100%;
+  background-color: white;
+  height: 70px;
+}
+.settings-form label {
+  font-weight: 450;
+}

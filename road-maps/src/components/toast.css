@@ -1,0 +1,24 @@
+.toastify {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+  background-color: #fafafa;
+  top: -100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  z-index: 15;
+  border-radius: 6px;
+}
+.toastify.active {
+  top: 20px;
+}
+.toastify p {
+  margin-left: 5px;
+  margin-top: 3px;
+}
+.success-icon {
+  color: green;
+  font-size: 26px;
+}

@@ -1,0 +1,76 @@
+.dashboard {
+  display: flex;
+  background-color: #f1f5f9;
+  height: 100vh;
+}
+.boxes-container {
+  padding-left: 20px;
+  width: 100%;
+  padding-right: 20px;
+}
+.actual-boxes-container {
+  display: grid;
+  width: 100%;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+}
+.dashboard header {
+  display: none;
+}
+/* .dashboard .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+} */
+.dashboard .buttons button {
+  transition: 0.3s;
+}
+
+.dashboard .buttons .bg-red {
+  position: relative;
+}
+.dashboard .buttons .bg-red:hover {
+  background-color: #cc0000;
+}
+.dashboard .buttons .bg-blue:hover {
+  background-color: #1787e0;
+}
+.delete-popup {
+  position: absolute;
+  right: -40px;
+  top: 50px;
+  border: 1px solid black;
+  padding: 10px;
+  z-index: 10;
+  color: black;
+  background-color: #fffff0;
+}
+.delete-popup p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.yes-no {
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
+}
+.confirm-delete {
+  transition: 0.3s;
+  transition: 0.3s;
+  padding: 5px 30px;
+  border: 1px solid #7777;
+}
+.cancel-delete {
+  transition: 0.3s;
+  transition: 0.3s;
+  padding: 5px 30px;
+  border: 1px solid #7777;
+}
+.confirm-delete:hover {
+  background-color: green;
+  color: white;
+}
+.cancel-delete:hover {
+  background-color: red;
+  color: white;
+}

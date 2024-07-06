@@ -1,0 +1,38 @@
+.blue {
+  background-color: #2196f3;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+  margin-top: 40px;
+  width: 450px;
+  height: 55px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blue.disabled {
+  pointer-events: none;
+}
+@media (max-width: 767px) {
+  .blue {
+    width: 100%;
+  }
+}
+.blue:hover {
+  background-color: #1787e0;
+}
+.sign {
+  color: #1787e0;
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  text-decoration: underline;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.sign:hover {
+  color: #2196f3;
+}

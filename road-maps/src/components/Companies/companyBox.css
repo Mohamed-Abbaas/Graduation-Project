@@ -1,0 +1,66 @@
+.company-box {
+  background-color: white;
+  box-shadow: 0 12px 14px 0 rgb(0 0 0 / 12%), 0 2px 4px 0 rgb(0 0 0 / 13%);
+  transition: 0.3s;
+  position: relative;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.company-box.behind {
+  z-index: 2;
+}
+.company-box::before {
+  content: "";
+  background-color: #2196f3;
+  position: absolute;
+  top: -3px;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  transition: 0.3s;
+}
+.company-box:hover {
+  transform: translateY(-10px);
+}
+.company-box:hover::before {
+  width: 100%;
+}
+.company-box h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #2196f3;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.company-box .line {
+  display: flex;
+  margin-bottom: 20px;
+  padding-top: 5px;
+}
+.company-box .line svg {
+  margin-right: 10px;
+  color: #2196f3;
+  width: 20px;
+  margin-top: 3px;
+}
+.company-box .line p {
+  line-height: 1.7;
+  padding-left: 5px;
+}
+.company-box .info {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: end;
+}
+.company-box a {
+  color: #2196f3;
+  transition: 0.3s;
+}
+.company-box a:hover {
+  color: #1787ec;
+}

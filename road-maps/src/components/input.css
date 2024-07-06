@@ -1,0 +1,20 @@
+.regular-input {
+  padding: 15px 10px !important;
+  background-color: #eee;
+  outline: none;
+  width: 450px;
+}
+@media (max-width: 767px) {
+  .regular-input {
+    width: 100% !important;
+  }
+}
+.regular-input:focus::placeholder {
+  opacity: 0;
+}
+.regular-label {
+  font-weight: bold;
+  font-size: 23px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}

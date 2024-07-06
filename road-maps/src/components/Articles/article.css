@@ -1,0 +1,101 @@
+.article-box {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
+  border-radius: 6px;
+  position: relative;
+}
+.article-box .events {
+  pointer-events: none;
+}
+.article-box .title {
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 35px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-box img {
+  position: absolute;
+  right: -10px;
+  top: -50px;
+  border-radius: 50%;
+  border: 10px solid #ececec;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+.article-box .three-icon {
+  top: 60px;
+  position: absolute;
+  right: 8px;
+  cursor: pointer;
+  z-index: 5;
+  font-size: 27px;
+}
+.article-box ul {
+  pointer-events: none;
+  position: absolute;
+  top: 51px;
+  background-color: #ececec;
+  right: 5px;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.3s;
+}
+.article-box ul.clicked {
+  top: 97px;
+  pointer-events: auto;
+  opacity: 1;
+}
+.article-box ul::before {
+  content: "";
+  border-color: transparent transparent #ececec transparent;
+  border-width: 10px;
+  position: absolute;
+  border-style: solid;
+  top: -19px;
+  right: 1px;
+}
+.article-box ul li {
+  color: #777;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+}
+.article-box ul li:hover {
+  background-color: white;
+  color: #2196f3;
+}
+
+.article-box .article {
+  margin: 0 0 10px;
+}
+.article-box .date {
+  display: block;
+  color: #777;
+  margin-top: 20px;
+  text-align: end;
+  margin-bottom: 10px;
+}
+.article-box p {
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #777;
+  font-size: 20px;
+}
+.article-box .name {
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.article-box .more {
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}

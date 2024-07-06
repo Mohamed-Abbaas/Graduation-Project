@@ -1,0 +1,36 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+@media (max-width: 991px) {
+  form {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 767px) {
+  form {
+    width: 100%;
+  }
+}
+form h2 {
+  color: #2196f3;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+form .forget {
+  margin-left: auto;
+  color: #1787e0;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+form .forget:hover {
+  color: #2196f3;
+}
+form .regular-input:not(last-of-type) {
+  margin-bottom: 20px;
+}

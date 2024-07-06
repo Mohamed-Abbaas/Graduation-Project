@@ -1,0 +1,49 @@
+.book-title {
+  font-size: 17px;
+}
+.short {
+  font-size: 13px;
+}
+.book-container {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  padding: 10px;
+  z-index: 2;
+  position: relative;
+}
+.book-container::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 0;
+  width: 0;
+  background-color: #ececec;
+  transition: 0.3s;
+}
+.book-container:hover::before {
+  height: 100%;
+  width: 100%;
+}
+.title {
+  font-weight: 450;
+  font-size: 15px;
+}
+.descriptionn {
+  font-size: 13px;
+  color: #777;
+}
+.details {
+  font-size: 11px;
+  display: block;
+  margin-left: auto;
+  margin-right: 27px;
+  margin-top: 5px;
+  color: #2196f3;
+  display: flex;
+  flex: 1;
+  align-items: end;
+}

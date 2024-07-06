@@ -1,0 +1,42 @@
+.settings {
+  margin-left: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .settings {
+    padding-right: 20px;
+  }
+}
+.settings input[type="file"] {
+  display: none;
+}
+.settings label[for="file"] {
+  background-color: #eee;
+  width: 60px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 20px;
+  cursor: pointer;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .settings form:first-child {
+  border-bottom: 1px solid black;
+} */
+.settings .image-icon {
+  height: 30px;
+  width: 30px;
+  color: #34495e;
+}
+.settings hr {
+  margin-top: 20px;
+  background-color: black;
+  height: 2px;
+  margin-left: -20px;
+  background-color: #b9b9b9;
+}

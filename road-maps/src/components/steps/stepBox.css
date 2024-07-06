@@ -1,0 +1,55 @@
+.step-box {
+  background-color: white;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
+  border-radius: 6px;
+  padding-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.books {
+  position: relative;
+  transition: 0.3s;
+}
+.step-box h2 {
+  text-align: center;
+  color: #2196f3;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.step-box .books-header {
+  display: flex;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+.step-box .books-header p {
+  font-weight: bold;
+}
+.step-box svg {
+  color: #2196f3;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+.step-box .books-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+.step-box .angle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2196f3;
+  z-index: 3;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.slide-right {
+  transform: translate(100%);
+}
+.step-box .left-angle {
+  left: 5px;
+}
+.step-box .right-angle {
+  right: -15px;
+}

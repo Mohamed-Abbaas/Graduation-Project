@@ -1,0 +1,5 @@
+.show-more {
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+}

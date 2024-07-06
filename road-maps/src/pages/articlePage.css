@@ -1,0 +1,45 @@
+.article-page .the-article {
+  background-color: #ececec;
+  margin-top: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.article-page .the-article .article-box .title {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.article-page .the-article .article-box img {
+  right: -24px;
+  top: -54px;
+  border-radius: 50%;
+  border: 11px solid #ececec;
+  height: 120px;
+  width: 120px;
+}
+.article-page .the-article .article-box .name {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.article-page .the-article .article-box p {
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #777;
+  font-size: 20px;
+}
+.article-page .back-icon {
+  position: absolute;
+  top: 200px;
+  left: 4rem;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 33px;
+  cursor: pointer;
+  z-index: 3;
+  transition: 0.3s;
+}
+.article-page .back-icon:hover {
+  background-color: red;
+  color: white;
+}

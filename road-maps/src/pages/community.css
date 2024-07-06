@@ -1,0 +1,52 @@
+.community .the-community {
+  background-color: #f0f2f5;
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.post .three-icon {
+  top: 10px;
+  position: absolute;
+  right: 8px;
+  cursor: pointer;
+  z-index: 5;
+  font-size: 27px;
+}
+.post ul {
+  pointer-events: none;
+  position: absolute;
+  top: 51px;
+  background-color: #ececec;
+  right: 5px;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.3s;
+}
+.post ul.clicked {
+  top: 50px;
+  pointer-events: auto;
+  opacity: 1;
+}
+.post ul::before {
+  content: "";
+  border-color: transparent transparent #ececec transparent;
+  border-width: 10px;
+  position: absolute;
+  border-style: solid;
+  top: -19px;
+  right: 1px;
+}
+.post ul li {
+  color: #777;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+}
+.post ul li:hover {
+  background-color: white;
+  color: #2196f3;
+}

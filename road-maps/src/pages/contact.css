@@ -1,0 +1,186 @@
+.contact {
+}
+.contact .first-half {
+  position: relative;
+  height: 500px;
+  top: -20px;
+}
+.contact .first-half::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("../../public/ContactHero.jpg");
+  top: 0;
+  background-size: cover;
+  left: 0;
+  z-index: -1;
+}
+.contact header ul li {
+  color: white;
+}
+.contact header ul li:before {
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+  background-color: #2196f3;
+  bottom: 1px;
+  left: 0;
+  height: 0;
+  width: 100%;
+  top: unset;
+}
+.contact header ul li:hover::before,
+.contact header ul li.active::before {
+  height: 1px;
+}
+.contact ul li:hover,
+.contact ul li.active {
+  background-color: #00000060;
+}
+.contact .second-half .container {
+  display: flex;
+}
+.contact .second-half h2 {
+  font-weight: bold;
+  color: #2196f3;
+  font-size: 30px;
+}
+.contact .left-side {
+  margin-top: 30px;
+  display: flex;
+}
+.contact .left-icon {
+  margin-right: 10px;
+  margin-top: 2px;
+  font-size: 30px;
+  color: #2196f3;
+}
+.contact .left-side p {
+  max-width: 200px;
+  color: #777;
+  line-height: 1.7;
+}
+@media (max-width: 992px) {
+  .contact .left-side p {
+    font-size: 20px;
+  }
+}
+.contact .boxes {
+  flex: 1;
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .contact .soon {
+    margin-top: 150px;
+  }
+}
+.contact .boxes .left-icon {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 50px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 30px;
+}
+.contact .boxes p {
+  max-width: 100%;
+  padding: 0 10px;
+  color: #777;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #eee;
+  text-align: center;
+}
+.contact .contact-box {
+  box-shadow: 0 0 10px #ddd;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.contact .contact-box .info {
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+}
+.contact .contact-box .info .chevron {
+  margin-left: -5px;
+}
+.contact .contact-box .info .arrows {
+  display: inline;
+  margin-right: 10px;
+  color: #2196f3;
+  font-weight: 900;
+}
+.contact .contact-box .info {
+  text-align: start;
+}
+.contact .contact-box .info .num-cont {
+  width: fit-content;
+  padding: 15px 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+/* .contact .contact-box .info .num-cont:not(:last-child) {
+  border-bottom: 1px solid #444;
+} */
+.contact .contact-box .bottom {
+  position: relative;
+}
+.contact .contact-box .info .num-cont:hover {
+  padding-left: 10px;
+}
+.contact .contact-box .info .num-cont .number {
+  color: black;
+  transition: 0.3s;
+}
+.contact .contact-box .info .num-cont:hover .number {
+  font-weight: bold;
+}
+.contact .contact-box .bottom .launch-icon {
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  width: 150px;
+  transition: 0.3s;
+  opacity: 0.1;
+}
+
+.contact .contact-box .bottom .launch-icon:hover {
+  opacity: 1;
+}
+.contact .contact-box .social {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100px;
+}
+@media (max-width: 992px) {
+  .contact .boxes {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .contact header ul {
+    background-color: #00000060 !important;
+  }
+  .contact header ul li {
+    width: 100%;
+    justify-content: start;
+    background-color: #00000060;
+    margin-left: 5px;
+    color: #777;
+    /* border-bottom: 1px solid var(--grey-color); */
+  }
+  .contact header ul li:hover {
+    color: white;
+    background-color: #00000080;
+  }
+  .contact header ul::before {
+    border-color: transparent transparent #00000060 transparent;
+  }
+}

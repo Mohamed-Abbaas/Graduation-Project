@@ -1,0 +1,41 @@
+@media (max-width: 767px) {
+  .dashboard-header-con {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.dashboard-header {
+  margin: 20px 20px 40px;
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 0;
+}
+.dashboard-header::before,
+.dashboard-header::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+}
+.dashboard-header::before {
+  background-color: white;
+  width: 120px;
+}
+.dashboard-header::after {
+  background-color: black;
+  width: 40px;
+}
+.dashboard-bars {
+  display: none;
+}
+@media (max-width: 767px) {
+  .dashboard-bars {
+    display: block;
+    margin-left: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,28 @@
+.news-input {
+  appearance: none;
+}
+.news-label {
+  background-color: #ececec;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 23px;
+  margin-top: 10px;
+  border-radius: 50px;
+  display: flex;
+  padding-right: 29px;
+  align-items: center;
+  cursor: pointer;
+}
+.news-label .slug {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+}
+.news-label .news-before {
+  background-color: white;
+  margin-right: 30px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}

@@ -1,0 +1,52 @@
+.the-comment {
+  display: flex;
+  margin-top: 30px;
+}
+.the-comment .text {
+  background-color: #f0f2f5;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 50px;
+  min-width: 200px;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: relative;
+}
+.the-comment .text h1 {
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.the-comment .comment-image {
+  height: 45px;
+  width: 45px;
+  margin-top: 4px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.the-comment .three-icon {
+  top: 14px;
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+  z-index: 5;
+  font-size: 27px;
+}
+.the-comment .three-icon ul {
+  pointer-events: none !important;
+}
+.the-comment .three-icon ul.clicked {
+  z-index: 4;
+  pointer-events: auto !important;
+}
+.the-comment .comment-form {
+  min-width: 400px !important;
+}
+.the-comment .comment-form input {
+  margin: 0 !important;
+}
+.the-comment .comment-form button {
+  position: absolute;
+  right: 14px !important;
+  top: 16px !important;
+  pointer-events: none;
+}

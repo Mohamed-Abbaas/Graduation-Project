@@ -1,0 +1,15 @@
+.features {
+  padding-top: 150px;
+  padding-bottom: 60px;
+}
+.features .container {
+  display: block;
+}
+@media (min-width: 768px) {
+  .features-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+  }
+}

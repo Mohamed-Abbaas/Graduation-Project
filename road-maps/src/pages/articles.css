@@ -1,0 +1,39 @@
+.articles .toastify {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+  background-color: #fafafa;
+  top: -100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  z-index: 15;
+  border-radius: 6px;
+}
+.articles .toastify.active {
+  top: 20px;
+}
+.articles .toastify p {
+  margin-left: 5px;
+  margin-top: 3px;
+}
+.articles .success-icon {
+  color: green;
+  font-size: 26px;
+}
+.articles .articles-container {
+  background-color: #ececec;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.articles .articles-container .actual-articles {
+  display: flex;
+  /* grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); */
+  /* gap: 40px 80px; */
+  flex-direction: column;
+  gap: 40px;
+}
+.articles .main-title {
+  margin-top: 50px;
+}

@@ -1,0 +1,26 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.pagination a {
+  background-color: #ececec;
+  border-radius: 6px;
+  width: 90px;
+  display: inane-block;
+  text-align: center;
+  box-shadow: 4px 4px 0 #cccccc;
+}
+.pagination a {
+  padding: 10px;
+}
+.pagination a:active {
+  transform: translateX(2px) translateY(2px);
+}
+.pagination a.active {
+  transform: translateX(2px) translateY(2px);
+  background-color: #cccccc;
+  box-shadow: none;
+}
